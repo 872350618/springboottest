@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.woniuxy.springboot.mapper.StuMapper">
+	<insert id="insertStu">
+		insert into stu values(#{sid},#{sname},#{age},#{birthdate})
+	</insert>
+	
+	<select id="selectAllStus" resultType="Stu">
+		select * from stu
+	</select>
+</mapper>
