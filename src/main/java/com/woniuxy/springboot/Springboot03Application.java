@@ -14,6 +14,7 @@ public class Springboot03Application {
 
 	public static void main(String[] args) {
 		System.out.println("zs bbbb");
+		System.out.println("ls--aaa");
 		SpringApplication.run(Springboot03Application.class, args);
 	}
 
