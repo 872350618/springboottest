@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" th:src="@{/js/jquery-2.1.4.js}"></script>
+<script type="text/javascript" >
+
+function getRootPath() {
+	var pathname = window.location.pathname;
+	var index = pathname.indexOf("/", 1);
+	var rootPath = pathname.substring(0, index);
+	return rootPath;
+}
+
+	$(function(){
+		$.post(
+				getRootPath()+"/getall",
+				null,
+				function(data){
+					console.log(data);
+				}
+		);
+		
+	});
+</script>
+</head>
+<body>
+/templates/index.html<br/>
+
+
+</body>
+</html>
